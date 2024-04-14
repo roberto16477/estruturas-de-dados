@@ -1,5 +1,5 @@
 def quickSort(alist):
-   quickSortHelper(alist,0,len(alist)-1)  #informa a lista, define o leftmark como o primeiro elemento da lista e o rightmark como o ultimo elemento da lista
+   quickSortHelper(alist,0,len(alist)-1)  #informa a lista, define o pivô como o primeiro elemento da lista e o rightmark como o ultimo elemento da lista
 
 def quickSortHelper(alist,first,last): #essa função faz os marcadores caminharem
    if first<last:
@@ -13,8 +13,8 @@ def quickSortHelper(alist,first,last): #essa função faz os marcadores caminhar
 def partition(alist,first,last):
    pivotvalue = alist[first]
 
-   leftmark = first+1
-   rightmark = last
+   leftmark = first+1               #define o leftmark como o primeiro elemento depois do pivô
+   rightmark = last                 #define rightmark como o ultimo elemento
 
    done = False
    while not done:
