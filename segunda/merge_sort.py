@@ -24,7 +24,7 @@ def mergeSort(alist):
                 j += 1
             k += 1
 
-        # Adiciona os elementos restantes da metade esquerda à lista
+        # Adiciona os elementos restantes da metade esquerda à lista.
         while i < len(lefthalf):
             alist[k] = lefthalf[i]
             i += 1
